@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d98822fee5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="sign-in">
+      <div>
+        <div id="sign-in-top">
+          <h2>Welcome to AJIO</h2>
+          <p onclick="window.location.href='/Registration.html'">
+            Join / Sign In using
+          </p>
+          <div>
+            <div>
+              <img
+                src="https://assets.ajio.com/static/img/fb.png"
+                alt="facebook"
+              />
+            </div>
+            <p>Facebook</p>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://assets.ajio.com/static/img/google.png"
+                alt="google"
+              />
+            </div>
+            <p>Google</p>
+          </div>
+        </div>
+        <div id="sign-in-bot">
+          <div>
+            <fieldset>
+              <legend>or</legend>
+            </fieldset>
+          </div>
+
+          <div>
+            <form onsubmit="login(event)">
+              <label class="form-label">Enter Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="Enter Mail Id"
+                required
+              />
+              <label class="form-label">Enter User Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="Enter password"
+                required
+              />
+
+              <input
+                type="submit"
+                class="form-input form-submit"
+                value="Log in"
+              />
+              <label class="form-bottom-text"
+                >By Signing In, I agree to Terms and Conditions.<span
+                  >Terms and Conditions.</span
+                ></label
+              >
+            </form>
+            <a href="/reset.html">Forget Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/server.js"></script>
+    <script>
+      var dataFromLs = JSON.parse(localStorage.getItem("currentUser"));
+
+      if (dataFromLs) {
+        alert("Your are already Loged in");
+        window.location.href = "/homepage.html";
+      }
+    </script>
+  </body>
+</html>

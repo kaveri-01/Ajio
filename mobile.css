@@ -1,0 +1,144 @@
+@media screen and (max-width:500px){
+    #nav >div{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #nav-right-top{
+        display:none;
+    }
+    #nav-right-bot-left{
+        display:none;
+    }
+    #nav-right-bot{
+        /* width:100%; */
+        
+    }
+    #nav-right-bot >div{
+        width:100%;
+    }
+    #nav-left{
+        height:40%;
+        width:50%;
+    }
+    #nav-right{
+        height:60%;
+        width:100%;
+        padding-top: 15px;
+    }
+    #nav{
+        height:80px;
+    }
+    #nav-right >div{
+        height: 100%;
+    }
+    #nav-right-bot-right >div{
+        height: 50%;
+        width:5%;
+        padding-right: 1%;
+    }
+    #nav-right-bot-right >div:nth-child(1) input,#nav-right-bot-right >div i{
+        font-size:3vw;
+        padding-right: 1%;
+    }
+    #countdown{
+        height: 20px;
+    }
+    #countdown >div{
+        font-size: 3vw;
+        width:50%;
+    }
+    .live-now{
+        height: 50px;
+    }
+    #pricing,#v-day{
+        height: 100px;
+    }
+    #discount,#brand-game,#in-trend,#bank{
+        height: 50px;
+        /* border: 1px solid red; */
+    }
+    #reward{
+        height: 50px;
+        /* border: 1px solid red; */
+    }
+    #invite,#trend-cards{
+        height:150px;
+    }
+    .product{
+        height:150px;
+    }
+    #logo{
+        height: 70px;
+    }
+    #logo >div i{
+        font-size: 4vw;
+    }
+    #logo >div p{
+        font-size: 3vw;
+    }
+    footer{
+        height: 200px;
+    }
+    #side{
+        display: none;
+    }
+    #main>div:nth-child(1){
+        width: 100%;
+    }
+    #topware-body{
+        width: 100%;
+        height: 500px;
+    }
+    #topware-body >div:nth-child(1){
+
+    }
+    #topware-bar >div{
+        font-size:3vw;
+    }
+    #topware-bar >div:nth-child(3) input{
+        height: 100%;
+    }
+    .card-images{
+        height: 200px;
+    }
+    .card-images>div >div:nth-child(1){
+        height: 70%;
+    }
+    .card-images>div >div:nth-child(2){
+        font-size: 2vw;
+    }
+    /* /// sign up */
+    #sign-in >div:nth-child(1){
+        width:100%;
+        height:90%;
+    }
+    #sign-in-top >h2{
+        font-size: 6vw;
+    }
+    #sign-in-top >p{
+        font-size:4vw;
+    }
+    #sign-in-top >div:nth-child(3)>p, #sign-in-top >div:nth-child(4)>p{
+        font-size:4vw;
+    }
+    #sign-in-bot legend{
+        font-size:4vw;
+    }
+    #sign-in-bot >div:nth-child(1){
+        width:90%;
+    }
+    #sign-in-bot >div >form >label,.form-label{
+        font-size:4vw;
+    }
+    #sign-in-bot >div >form >input,.form-input{
+        font-size:3vw;
+    }
+    #sign-in-bot >div >form >label:nth-child(12),.form-submit{
+        font-size:2vw;
+    }
+}
+
+
+

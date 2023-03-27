@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d98822fee5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="sign-in">
+      <div>
+        <div id="sign-in-top">
+          <h2>Welcome to AJIO</h2>
+          <p onclick="window.location.href='/Registration.html'">
+            Join / Sign In using
+          </p>
+          <div>
+            <div>
+              <img
+                src="https://assets.ajio.com/static/img/fb.png"
+                alt="facebook"
+              />
+            </div>
+            <p>Facebook</p>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://assets.ajio.com/static/img/google.png"
+                alt="google"
+              />
+            </div>
+            <p>Google</p>
+          </div>
+        </div>
+        <div id="sign-in-bot">
+          <div>
+            <fieldset>
+              <legend>or</legend>
+            </fieldset>
+          </div>
+
+          <div id="change" class="form-label">
+            <input type="email" id="email" placeholder="Email" class="form-input"/>
+            <button onclick="forgotPassword(event)" class="form-input form-submit">submit Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/server.js"></script>
+  </body>
+</html>
